@@ -569,3 +569,25 @@ BEGIN
 	WHERE DateCheckIn >= @checkIn AND DateCheckOut <= @checkOut AND b.status = 1 AND t.id = b.idTable
 END
 GO
+
+
+CREATE PROC USP_UpdateAccount
+@userName NVARCHAR(100), @displayName NVARCHAR(100), @password NVARCHAR(100), @newPassword NVARCHAR(100)
+AS
+BEGIN
+    DECLARE @isRightPass INT
+
+	SELECT @isRightPass = COUNT(*) FROM dbo.Account WHERE UserName = @userName AND PassWord = @password
+
+	IF(@isRightPass = 1)
+	BEGIN
+	    IF(@newPassword = NULL OR @newPassword = '')
+		BEGIN
+		    UPDATE dbo.Account SET DisplayName = @displayName WHERE UserName = @userName
+		END
+		ELSE
+			UPDATE dbo.Account SET DisplayName = @displayName, PassWord = @password WHERE UserName = @userName
+	END
+END
+GO
+
