@@ -313,6 +313,16 @@ VALUES
     )
 
 
+
+ALTER TABLE dbo.Bill
+ADD discount INT
+
+UPDATE dbo.Bill SET discount = 0
+GO
+
+ALTER TABLE dbo.Bill ADD totalPrice FLOAT
+GO
+
 -- thêm bill info
 
 INSERT dbo.BillInfo
@@ -446,9 +456,9 @@ BEGIN
 	SELECT @count = COUNT(*) FROM dbo.BillInfo WHERE idBill = @idBill
 
 	IF(@count > 0)
-		UPDATE dbo.TableFood SET status = N'Co nguoi' WHERE id = @idTable
+		UPDATE dbo.TableFood SET status = N'Có Người' WHERE id = @idTable
 	ELSE
-		UPDATE dbo.TableFood SET status = N'Trong' WHERE id = @idTable
+		UPDATE dbo.TableFood SET status = N'Trống' WHERE id = @idTable
 END
 GO
 
@@ -469,19 +479,11 @@ BEGIN
 	SELECT @count = COUNT(*) FROM dbo.Bill WHERE idTable = @idTable AND status = 0
 
 	IF(@count = 0)
-		UPDATE dbo.TableFood SET status = N'Trong' WHERE id = @idTable
+		UPDATE dbo.TableFood SET status = N'Trống' WHERE id = @idTable
 END
 GO
 
-
-ALTER TABLE dbo.Bill
-ADD discount INT
-
-UPDATE dbo.Bill SET discount = 0
-GO
-
-
-CREATE PROC USP_SwitchTable
+Create PROC USP_SwitchTable
 @idTable1 int, @idTable2 INT
 AS
 BEGIN
@@ -549,14 +551,11 @@ BEGIN
 	DROP TABLE dbo.IDBillInfoTable
 
 	IF (@isFirstTablEmty = 0)
-		UPDATE dbo.TableFood SET status = N'Trong' WHERE id = @idTable2
+		UPDATE dbo.TableFood SET status = N'Trống' WHERE id = @idTable2
 
 	IF (@isSecondTablEmty = 0)
-		UPDATE dbo.TableFood SET status = N'Trong' WHERE id = @idTable1
+		UPDATE dbo.TableFood SET status = N'Trống' WHERE id = @idTable1
 END
-GO
-
-ALTER TABLE dbo.Bill ADD totalPrice FLOAT
 GO
 
 

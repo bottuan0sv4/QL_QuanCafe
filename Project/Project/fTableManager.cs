@@ -69,7 +69,7 @@ namespace Project
 
                 switch (item.Status)
                 {
-                    case "Trong":
+                    case "Trống":
                         btn.BackColor = Color.Aqua;
                         break;
 

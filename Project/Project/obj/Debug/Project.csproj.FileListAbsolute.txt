@@ -11,3 +11,16 @@ D:\Working Space\Visual Studio\PM_QL_QuanCafe\Project\Project\obj\Debug\Project.
 D:\Working Space\Visual Studio\PM_QL_QuanCafe\Project\Project\obj\Debug\Project.fAccountProfire.resources
 D:\Working Space\Visual Studio\PM_QL_QuanCafe\Project\Project\obj\Debug\Project.fAdmin.resources
 D:\Working Space\Visual Studio\PM_QL_QuanCafe\Project\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+D:\Visual Studio\QL_QuanCafe\Project\Project\bin\Debug\Project.exe.config
+D:\Visual Studio\QL_QuanCafe\Project\Project\bin\Debug\Project.exe
+D:\Visual Studio\QL_QuanCafe\Project\Project\bin\Debug\Project.pdb
+D:\Visual Studio\QL_QuanCafe\Project\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+D:\Visual Studio\QL_QuanCafe\Project\Project\obj\Debug\Project.fAccountProfire.resources
+D:\Visual Studio\QL_QuanCafe\Project\Project\obj\Debug\Project.fAdmin.resources
+D:\Visual Studio\QL_QuanCafe\Project\Project\obj\Debug\Project.fLogin.resources
+D:\Visual Studio\QL_QuanCafe\Project\Project\obj\Debug\Project.fTableManager.resources
+D:\Visual Studio\QL_QuanCafe\Project\Project\obj\Debug\Project.Properties.Resources.resources
+D:\Visual Studio\QL_QuanCafe\Project\Project\obj\Debug\Project.csproj.GenerateResource.cache
+D:\Visual Studio\QL_QuanCafe\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\Visual Studio\QL_QuanCafe\Project\Project\obj\Debug\Project.exe
+D:\Visual Studio\QL_QuanCafe\Project\Project\obj\Debug\Project.pdb
