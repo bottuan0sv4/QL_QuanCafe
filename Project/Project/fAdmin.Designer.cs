@@ -162,7 +162,7 @@ namespace Project
             this.tcAdmin.Controls.Add(this.tpTable);
             this.tcAdmin.Controls.Add(this.tpAccount);
             this.tcAdmin.Location = new System.Drawing.Point(9, 10);
-            this.tcAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tcAdmin.Margin = new System.Windows.Forms.Padding(2);
             this.tcAdmin.Name = "tcAdmin";
             this.tcAdmin.SelectedIndex = 0;
             this.tcAdmin.Size = new System.Drawing.Size(811, 530);
@@ -173,9 +173,9 @@ namespace Project
             this.tpBill.Controls.Add(this.panel2);
             this.tpBill.Controls.Add(this.panel1);
             this.tpBill.Location = new System.Drawing.Point(4, 22);
-            this.tpBill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpBill.Margin = new System.Windows.Forms.Padding(2);
             this.tpBill.Name = "tpBill";
-            this.tpBill.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpBill.Padding = new System.Windows.Forms.Padding(2);
             this.tpBill.Size = new System.Drawing.Size(803, 504);
             this.tpBill.TabIndex = 0;
             this.tpBill.Text = "Doanh thu";
@@ -187,7 +187,7 @@ namespace Project
             this.panel2.Controls.Add(this.dtpkToDate);
             this.panel2.Controls.Add(this.dtpkFromDate);
             this.panel2.Location = new System.Drawing.Point(7, 5);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(791, 29);
             this.panel2.TabIndex = 1;
@@ -195,7 +195,7 @@ namespace Project
             // btnViewBill
             // 
             this.btnViewBill.Location = new System.Drawing.Point(331, 2);
-            this.btnViewBill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnViewBill.Margin = new System.Windows.Forms.Padding(2);
             this.btnViewBill.Name = "btnViewBill";
             this.btnViewBill.Size = new System.Drawing.Size(84, 24);
             this.btnViewBill.TabIndex = 2;
@@ -206,7 +206,7 @@ namespace Project
             // dtpkToDate
             // 
             this.dtpkToDate.Location = new System.Drawing.Point(596, 4);
-            this.dtpkToDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpkToDate.Margin = new System.Windows.Forms.Padding(2);
             this.dtpkToDate.Name = "dtpkToDate";
             this.dtpkToDate.Size = new System.Drawing.Size(194, 20);
             this.dtpkToDate.TabIndex = 1;
@@ -214,7 +214,7 @@ namespace Project
             // dtpkFromDate
             // 
             this.dtpkFromDate.Location = new System.Drawing.Point(2, 4);
-            this.dtpkFromDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpkFromDate.Margin = new System.Windows.Forms.Padding(2);
             this.dtpkFromDate.Name = "dtpkFromDate";
             this.dtpkFromDate.Size = new System.Drawing.Size(194, 20);
             this.dtpkFromDate.TabIndex = 0;
@@ -223,7 +223,7 @@ namespace Project
             // 
             this.panel1.Controls.Add(this.dtgvBill);
             this.panel1.Location = new System.Drawing.Point(4, 39);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(796, 462);
             this.panel1.TabIndex = 0;
@@ -233,7 +233,7 @@ namespace Project
             this.dtgvBill.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvBill.Location = new System.Drawing.Point(2, 2);
-            this.dtgvBill.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtgvBill.Margin = new System.Windows.Forms.Padding(2);
             this.dtgvBill.Name = "dtgvBill";
             this.dtgvBill.RowHeadersWidth = 51;
             this.dtgvBill.RowTemplate.Height = 24;
@@ -247,9 +247,9 @@ namespace Project
             this.tpFood.Controls.Add(this.panel4);
             this.tpFood.Controls.Add(this.panel3);
             this.tpFood.Location = new System.Drawing.Point(4, 22);
-            this.tpFood.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpFood.Margin = new System.Windows.Forms.Padding(2);
             this.tpFood.Name = "tpFood";
-            this.tpFood.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpFood.Padding = new System.Windows.Forms.Padding(2);
             this.tpFood.Size = new System.Drawing.Size(803, 504);
             this.tpFood.TabIndex = 1;
             this.tpFood.Text = "Thức Ăn";
@@ -260,7 +260,7 @@ namespace Project
             this.panel6.Controls.Add(this.txbSearchFoodName);
             this.panel6.Controls.Add(this.btnSearchFood);
             this.panel6.Location = new System.Drawing.Point(392, 5);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(408, 66);
             this.panel6.TabIndex = 3;
@@ -268,7 +268,7 @@ namespace Project
             // txbSearchFoodName
             // 
             this.txbSearchFoodName.Location = new System.Drawing.Point(2, 16);
-            this.txbSearchFoodName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbSearchFoodName.Margin = new System.Windows.Forms.Padding(2);
             this.txbSearchFoodName.Multiline = true;
             this.txbSearchFoodName.Name = "txbSearchFoodName";
             this.txbSearchFoodName.Size = new System.Drawing.Size(312, 33);
@@ -277,7 +277,7 @@ namespace Project
             // btnSearchFood
             // 
             this.btnSearchFood.Location = new System.Drawing.Point(318, 2);
-            this.btnSearchFood.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSearchFood.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearchFood.Name = "btnSearchFood";
             this.btnSearchFood.Size = new System.Drawing.Size(88, 61);
             this.btnSearchFood.TabIndex = 4;
@@ -291,7 +291,7 @@ namespace Project
             this.panel5.Controls.Add(this.panel8);
             this.panel5.Controls.Add(this.panel7);
             this.panel5.Location = new System.Drawing.Point(392, 76);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(408, 426);
             this.panel5.TabIndex = 2;
@@ -301,7 +301,7 @@ namespace Project
             this.panel10.Controls.Add(this.nmFoodPrice);
             this.panel10.Controls.Add(this.label4);
             this.panel10.Location = new System.Drawing.Point(2, 210);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(404, 64);
             this.panel10.TabIndex = 3;
@@ -309,7 +309,7 @@ namespace Project
             // nmFoodPrice
             // 
             this.nmFoodPrice.Location = new System.Drawing.Point(109, 24);
-            this.nmFoodPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nmFoodPrice.Margin = new System.Windows.Forms.Padding(2);
             this.nmFoodPrice.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -335,7 +335,7 @@ namespace Project
             this.panel9.Controls.Add(this.cbFoodCategory);
             this.panel9.Controls.Add(this.label3);
             this.panel9.Location = new System.Drawing.Point(2, 141);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(404, 64);
             this.panel9.TabIndex = 3;
@@ -344,7 +344,7 @@ namespace Project
             // 
             this.cbFoodCategory.FormattingEnabled = true;
             this.cbFoodCategory.Location = new System.Drawing.Point(109, 23);
-            this.cbFoodCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbFoodCategory.Margin = new System.Windows.Forms.Padding(2);
             this.cbFoodCategory.Name = "cbFoodCategory";
             this.cbFoodCategory.Size = new System.Drawing.Size(294, 21);
             this.cbFoodCategory.TabIndex = 1;
@@ -365,7 +365,7 @@ namespace Project
             this.panel8.Controls.Add(this.txbFoodName);
             this.panel8.Controls.Add(this.label2);
             this.panel8.Location = new System.Drawing.Point(2, 72);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(404, 64);
             this.panel8.TabIndex = 2;
@@ -373,7 +373,7 @@ namespace Project
             // txbFoodName
             // 
             this.txbFoodName.Location = new System.Drawing.Point(109, 24);
-            this.txbFoodName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbFoodName.Margin = new System.Windows.Forms.Padding(2);
             this.txbFoodName.Name = "txbFoodName";
             this.txbFoodName.Size = new System.Drawing.Size(294, 20);
             this.txbFoodName.TabIndex = 1;
@@ -394,7 +394,7 @@ namespace Project
             this.panel7.Controls.Add(this.txbFoodID);
             this.panel7.Controls.Add(this.label1);
             this.panel7.Location = new System.Drawing.Point(2, 2);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(404, 64);
             this.panel7.TabIndex = 1;
@@ -402,7 +402,7 @@ namespace Project
             // txbFoodID
             // 
             this.txbFoodID.Location = new System.Drawing.Point(109, 24);
-            this.txbFoodID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbFoodID.Margin = new System.Windows.Forms.Padding(2);
             this.txbFoodID.Name = "txbFoodID";
             this.txbFoodID.ReadOnly = true;
             this.txbFoodID.Size = new System.Drawing.Size(294, 20);
@@ -427,7 +427,7 @@ namespace Project
             this.panel4.Controls.Add(this.btnDeleteFood);
             this.panel4.Controls.Add(this.btnAddFood);
             this.panel4.Location = new System.Drawing.Point(4, 5);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(383, 66);
             this.panel4.TabIndex = 1;
@@ -435,7 +435,7 @@ namespace Project
             // btnShowFood
             // 
             this.btnShowFood.Location = new System.Drawing.Point(279, 2);
-            this.btnShowFood.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnShowFood.Margin = new System.Windows.Forms.Padding(2);
             this.btnShowFood.Name = "btnShowFood";
             this.btnShowFood.Size = new System.Drawing.Size(88, 61);
             this.btnShowFood.TabIndex = 3;
@@ -446,38 +446,41 @@ namespace Project
             // btnEditFood
             // 
             this.btnEditFood.Location = new System.Drawing.Point(187, 2);
-            this.btnEditFood.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEditFood.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditFood.Name = "btnEditFood";
             this.btnEditFood.Size = new System.Drawing.Size(88, 61);
             this.btnEditFood.TabIndex = 2;
             this.btnEditFood.Text = "Sửa";
             this.btnEditFood.UseVisualStyleBackColor = true;
+            this.btnEditFood.Click += new System.EventHandler(this.btnEditFood_Click);
             // 
             // btnDeleteFood
             // 
             this.btnDeleteFood.Location = new System.Drawing.Point(94, 2);
-            this.btnDeleteFood.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDeleteFood.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeleteFood.Name = "btnDeleteFood";
             this.btnDeleteFood.Size = new System.Drawing.Size(88, 61);
             this.btnDeleteFood.TabIndex = 1;
             this.btnDeleteFood.Text = "Xóa";
             this.btnDeleteFood.UseVisualStyleBackColor = true;
+            this.btnDeleteFood.Click += new System.EventHandler(this.btnDeleteFood_Click);
             // 
             // btnAddFood
             // 
             this.btnAddFood.Location = new System.Drawing.Point(2, 2);
-            this.btnAddFood.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddFood.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddFood.Name = "btnAddFood";
             this.btnAddFood.Size = new System.Drawing.Size(88, 61);
             this.btnAddFood.TabIndex = 0;
             this.btnAddFood.Text = "Thêm";
             this.btnAddFood.UseVisualStyleBackColor = true;
+            this.btnAddFood.Click += new System.EventHandler(this.btnAddFood_Click);
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.dtgvFood);
             this.panel3.Location = new System.Drawing.Point(4, 76);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(383, 426);
             this.panel3.TabIndex = 0;
@@ -486,7 +489,7 @@ namespace Project
             // 
             this.dtgvFood.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvFood.Location = new System.Drawing.Point(2, 2);
-            this.dtgvFood.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtgvFood.Margin = new System.Windows.Forms.Padding(2);
             this.dtgvFood.Name = "dtgvFood";
             this.dtgvFood.RowHeadersWidth = 51;
             this.dtgvFood.RowTemplate.Height = 24;
@@ -499,9 +502,9 @@ namespace Project
             this.tpFoodCategory.Controls.Add(this.panel17);
             this.tpFoodCategory.Controls.Add(this.panel18);
             this.tpFoodCategory.Location = new System.Drawing.Point(4, 22);
-            this.tpFoodCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpFoodCategory.Margin = new System.Windows.Forms.Padding(2);
             this.tpFoodCategory.Name = "tpFoodCategory";
-            this.tpFoodCategory.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpFoodCategory.Padding = new System.Windows.Forms.Padding(2);
             this.tpFoodCategory.Size = new System.Drawing.Size(803, 504);
             this.tpFoodCategory.TabIndex = 2;
             this.tpFoodCategory.Text = "Danh mục";
@@ -512,7 +515,7 @@ namespace Project
             this.panel12.Controls.Add(this.panel15);
             this.panel12.Controls.Add(this.panel16);
             this.panel12.Location = new System.Drawing.Point(392, 76);
-            this.panel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel12.Margin = new System.Windows.Forms.Padding(2);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(408, 426);
             this.panel12.TabIndex = 6;
@@ -522,7 +525,7 @@ namespace Project
             this.panel15.Controls.Add(this.tbxCategoryName);
             this.panel15.Controls.Add(this.label7);
             this.panel15.Location = new System.Drawing.Point(2, 72);
-            this.panel15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel15.Margin = new System.Windows.Forms.Padding(2);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(404, 64);
             this.panel15.TabIndex = 2;
@@ -530,7 +533,7 @@ namespace Project
             // tbxCategoryName
             // 
             this.tbxCategoryName.Location = new System.Drawing.Point(139, 24);
-            this.tbxCategoryName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxCategoryName.Margin = new System.Windows.Forms.Padding(2);
             this.tbxCategoryName.Name = "tbxCategoryName";
             this.tbxCategoryName.Size = new System.Drawing.Size(264, 20);
             this.tbxCategoryName.TabIndex = 1;
@@ -551,7 +554,7 @@ namespace Project
             this.panel16.Controls.Add(this.tbxCategoryID);
             this.panel16.Controls.Add(this.label8);
             this.panel16.Location = new System.Drawing.Point(2, 2);
-            this.panel16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel16.Margin = new System.Windows.Forms.Padding(2);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(404, 64);
             this.panel16.TabIndex = 1;
@@ -559,7 +562,7 @@ namespace Project
             // tbxCategoryID
             // 
             this.tbxCategoryID.Location = new System.Drawing.Point(139, 24);
-            this.tbxCategoryID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxCategoryID.Margin = new System.Windows.Forms.Padding(2);
             this.tbxCategoryID.Name = "tbxCategoryID";
             this.tbxCategoryID.ReadOnly = true;
             this.tbxCategoryID.Size = new System.Drawing.Size(264, 20);
@@ -583,7 +586,7 @@ namespace Project
             this.panel17.Controls.Add(this.btnDeleteCategory);
             this.panel17.Controls.Add(this.btnAddCategory);
             this.panel17.Location = new System.Drawing.Point(4, 5);
-            this.panel17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel17.Margin = new System.Windows.Forms.Padding(2);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(383, 66);
             this.panel17.TabIndex = 5;
@@ -591,7 +594,7 @@ namespace Project
             // btnShowCategory
             // 
             this.btnShowCategory.Location = new System.Drawing.Point(279, 2);
-            this.btnShowCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnShowCategory.Margin = new System.Windows.Forms.Padding(2);
             this.btnShowCategory.Name = "btnShowCategory";
             this.btnShowCategory.Size = new System.Drawing.Size(88, 61);
             this.btnShowCategory.TabIndex = 3;
@@ -601,7 +604,7 @@ namespace Project
             // btnEditCategory
             // 
             this.btnEditCategory.Location = new System.Drawing.Point(187, 2);
-            this.btnEditCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEditCategory.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditCategory.Name = "btnEditCategory";
             this.btnEditCategory.Size = new System.Drawing.Size(88, 61);
             this.btnEditCategory.TabIndex = 2;
@@ -611,7 +614,7 @@ namespace Project
             // btnDeleteCategory
             // 
             this.btnDeleteCategory.Location = new System.Drawing.Point(94, 2);
-            this.btnDeleteCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDeleteCategory.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeleteCategory.Name = "btnDeleteCategory";
             this.btnDeleteCategory.Size = new System.Drawing.Size(88, 61);
             this.btnDeleteCategory.TabIndex = 1;
@@ -621,7 +624,7 @@ namespace Project
             // btnAddCategory
             // 
             this.btnAddCategory.Location = new System.Drawing.Point(2, 2);
-            this.btnAddCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddCategory.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddCategory.Name = "btnAddCategory";
             this.btnAddCategory.Size = new System.Drawing.Size(88, 61);
             this.btnAddCategory.TabIndex = 0;
@@ -632,7 +635,7 @@ namespace Project
             // 
             this.panel18.Controls.Add(this.dtgvCategory);
             this.panel18.Location = new System.Drawing.Point(4, 76);
-            this.panel18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel18.Margin = new System.Windows.Forms.Padding(2);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(383, 426);
             this.panel18.TabIndex = 4;
@@ -641,7 +644,7 @@ namespace Project
             // 
             this.dtgvCategory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvCategory.Location = new System.Drawing.Point(2, 2);
-            this.dtgvCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtgvCategory.Margin = new System.Windows.Forms.Padding(2);
             this.dtgvCategory.Name = "dtgvCategory";
             this.dtgvCategory.RowHeadersWidth = 51;
             this.dtgvCategory.RowTemplate.Height = 24;
@@ -654,9 +657,9 @@ namespace Project
             this.tpTable.Controls.Add(this.panel19);
             this.tpTable.Controls.Add(this.panel20);
             this.tpTable.Location = new System.Drawing.Point(4, 22);
-            this.tpTable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpTable.Margin = new System.Windows.Forms.Padding(2);
             this.tpTable.Name = "tpTable";
-            this.tpTable.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpTable.Padding = new System.Windows.Forms.Padding(2);
             this.tpTable.Size = new System.Drawing.Size(803, 504);
             this.tpTable.TabIndex = 3;
             this.tpTable.Text = "Bàn ăn";
@@ -668,7 +671,7 @@ namespace Project
             this.panel11.Controls.Add(this.panel13);
             this.panel11.Controls.Add(this.panel14);
             this.panel11.Location = new System.Drawing.Point(392, 76);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(408, 426);
             this.panel11.TabIndex = 9;
@@ -678,7 +681,7 @@ namespace Project
             this.panel21.Controls.Add(this.cbTableStatus);
             this.panel21.Controls.Add(this.label9);
             this.panel21.Location = new System.Drawing.Point(2, 141);
-            this.panel21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel21.Margin = new System.Windows.Forms.Padding(2);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(404, 64);
             this.panel21.TabIndex = 3;
@@ -687,7 +690,7 @@ namespace Project
             // 
             this.cbTableStatus.FormattingEnabled = true;
             this.cbTableStatus.Location = new System.Drawing.Point(121, 23);
-            this.cbTableStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbTableStatus.Margin = new System.Windows.Forms.Padding(2);
             this.cbTableStatus.Name = "cbTableStatus";
             this.cbTableStatus.Size = new System.Drawing.Size(282, 21);
             this.cbTableStatus.TabIndex = 1;
@@ -708,7 +711,7 @@ namespace Project
             this.panel13.Controls.Add(this.txbTableName);
             this.panel13.Controls.Add(this.label5);
             this.panel13.Location = new System.Drawing.Point(2, 72);
-            this.panel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel13.Margin = new System.Windows.Forms.Padding(2);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(404, 64);
             this.panel13.TabIndex = 2;
@@ -716,7 +719,7 @@ namespace Project
             // txbTableName
             // 
             this.txbTableName.Location = new System.Drawing.Point(121, 24);
-            this.txbTableName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbTableName.Margin = new System.Windows.Forms.Padding(2);
             this.txbTableName.Name = "txbTableName";
             this.txbTableName.Size = new System.Drawing.Size(282, 20);
             this.txbTableName.TabIndex = 1;
@@ -737,7 +740,7 @@ namespace Project
             this.panel14.Controls.Add(this.txbTableID);
             this.panel14.Controls.Add(this.label6);
             this.panel14.Location = new System.Drawing.Point(2, 2);
-            this.panel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel14.Margin = new System.Windows.Forms.Padding(2);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(404, 64);
             this.panel14.TabIndex = 1;
@@ -745,7 +748,7 @@ namespace Project
             // txbTableID
             // 
             this.txbTableID.Location = new System.Drawing.Point(121, 24);
-            this.txbTableID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbTableID.Margin = new System.Windows.Forms.Padding(2);
             this.txbTableID.Name = "txbTableID";
             this.txbTableID.ReadOnly = true;
             this.txbTableID.Size = new System.Drawing.Size(282, 20);
@@ -769,7 +772,7 @@ namespace Project
             this.panel19.Controls.Add(this.btnDeleteTable);
             this.panel19.Controls.Add(this.btnAddTable);
             this.panel19.Location = new System.Drawing.Point(4, 5);
-            this.panel19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel19.Margin = new System.Windows.Forms.Padding(2);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(383, 66);
             this.panel19.TabIndex = 8;
@@ -777,7 +780,7 @@ namespace Project
             // btnShowTable
             // 
             this.btnShowTable.Location = new System.Drawing.Point(279, 2);
-            this.btnShowTable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnShowTable.Margin = new System.Windows.Forms.Padding(2);
             this.btnShowTable.Name = "btnShowTable";
             this.btnShowTable.Size = new System.Drawing.Size(88, 61);
             this.btnShowTable.TabIndex = 3;
@@ -787,7 +790,7 @@ namespace Project
             // btnEditTable
             // 
             this.btnEditTable.Location = new System.Drawing.Point(187, 2);
-            this.btnEditTable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEditTable.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditTable.Name = "btnEditTable";
             this.btnEditTable.Size = new System.Drawing.Size(88, 61);
             this.btnEditTable.TabIndex = 2;
@@ -797,7 +800,7 @@ namespace Project
             // btnDeleteTable
             // 
             this.btnDeleteTable.Location = new System.Drawing.Point(94, 2);
-            this.btnDeleteTable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDeleteTable.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeleteTable.Name = "btnDeleteTable";
             this.btnDeleteTable.Size = new System.Drawing.Size(88, 61);
             this.btnDeleteTable.TabIndex = 1;
@@ -807,7 +810,7 @@ namespace Project
             // btnAddTable
             // 
             this.btnAddTable.Location = new System.Drawing.Point(2, 2);
-            this.btnAddTable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddTable.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddTable.Name = "btnAddTable";
             this.btnAddTable.Size = new System.Drawing.Size(88, 61);
             this.btnAddTable.TabIndex = 0;
@@ -818,7 +821,7 @@ namespace Project
             // 
             this.panel20.Controls.Add(this.dtgvTable);
             this.panel20.Location = new System.Drawing.Point(4, 76);
-            this.panel20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel20.Margin = new System.Windows.Forms.Padding(2);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(383, 426);
             this.panel20.TabIndex = 7;
@@ -827,7 +830,7 @@ namespace Project
             // 
             this.dtgvTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvTable.Location = new System.Drawing.Point(2, 2);
-            this.dtgvTable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtgvTable.Margin = new System.Windows.Forms.Padding(2);
             this.dtgvTable.Name = "dtgvTable";
             this.dtgvTable.RowHeadersWidth = 51;
             this.dtgvTable.RowTemplate.Height = 24;
@@ -840,9 +843,9 @@ namespace Project
             this.tpAccount.Controls.Add(this.panel28);
             this.tpAccount.Controls.Add(this.panel29);
             this.tpAccount.Location = new System.Drawing.Point(4, 22);
-            this.tpAccount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpAccount.Margin = new System.Windows.Forms.Padding(2);
             this.tpAccount.Name = "tpAccount";
-            this.tpAccount.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpAccount.Padding = new System.Windows.Forms.Padding(2);
             this.tpAccount.Size = new System.Drawing.Size(803, 504);
             this.tpAccount.TabIndex = 4;
             this.tpAccount.Text = "Tài khoản";
@@ -855,7 +858,7 @@ namespace Project
             this.panel23.Controls.Add(this.panel26);
             this.panel23.Controls.Add(this.panel27);
             this.panel23.Location = new System.Drawing.Point(392, 76);
-            this.panel23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel23.Margin = new System.Windows.Forms.Padding(2);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(408, 426);
             this.panel23.TabIndex = 6;
@@ -863,7 +866,7 @@ namespace Project
             // btnResetPassWord
             // 
             this.btnResetPassWord.Location = new System.Drawing.Point(316, 210);
-            this.btnResetPassWord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnResetPassWord.Margin = new System.Windows.Forms.Padding(2);
             this.btnResetPassWord.Name = "btnResetPassWord";
             this.btnResetPassWord.Size = new System.Drawing.Size(88, 61);
             this.btnResetPassWord.TabIndex = 4;
@@ -875,7 +878,7 @@ namespace Project
             this.panel25.Controls.Add(this.cbTypeAccount);
             this.panel25.Controls.Add(this.label11);
             this.panel25.Location = new System.Drawing.Point(2, 141);
-            this.panel25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel25.Margin = new System.Windows.Forms.Padding(2);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(404, 64);
             this.panel25.TabIndex = 3;
@@ -884,7 +887,7 @@ namespace Project
             // 
             this.cbTypeAccount.FormattingEnabled = true;
             this.cbTypeAccount.Location = new System.Drawing.Point(132, 23);
-            this.cbTypeAccount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbTypeAccount.Margin = new System.Windows.Forms.Padding(2);
             this.cbTypeAccount.Name = "cbTypeAccount";
             this.cbTypeAccount.Size = new System.Drawing.Size(270, 21);
             this.cbTypeAccount.TabIndex = 1;
@@ -905,7 +908,7 @@ namespace Project
             this.panel26.Controls.Add(this.txbDisplayName);
             this.panel26.Controls.Add(this.label12);
             this.panel26.Location = new System.Drawing.Point(2, 72);
-            this.panel26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel26.Margin = new System.Windows.Forms.Padding(2);
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(404, 64);
             this.panel26.TabIndex = 2;
@@ -913,7 +916,7 @@ namespace Project
             // txbDisplayName
             // 
             this.txbDisplayName.Location = new System.Drawing.Point(132, 24);
-            this.txbDisplayName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbDisplayName.Margin = new System.Windows.Forms.Padding(2);
             this.txbDisplayName.Name = "txbDisplayName";
             this.txbDisplayName.Size = new System.Drawing.Size(270, 20);
             this.txbDisplayName.TabIndex = 1;
@@ -934,7 +937,7 @@ namespace Project
             this.panel27.Controls.Add(this.txbUserName);
             this.panel27.Controls.Add(this.label13);
             this.panel27.Location = new System.Drawing.Point(2, 2);
-            this.panel27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel27.Margin = new System.Windows.Forms.Padding(2);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(404, 64);
             this.panel27.TabIndex = 1;
@@ -942,7 +945,7 @@ namespace Project
             // txbUserName
             // 
             this.txbUserName.Location = new System.Drawing.Point(132, 24);
-            this.txbUserName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbUserName.Margin = new System.Windows.Forms.Padding(2);
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.ReadOnly = true;
             this.txbUserName.Size = new System.Drawing.Size(270, 20);
@@ -966,7 +969,7 @@ namespace Project
             this.panel28.Controls.Add(this.btnDeleteAccount);
             this.panel28.Controls.Add(this.btnAddAccount);
             this.panel28.Location = new System.Drawing.Point(4, 5);
-            this.panel28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel28.Margin = new System.Windows.Forms.Padding(2);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(383, 66);
             this.panel28.TabIndex = 5;
@@ -974,7 +977,7 @@ namespace Project
             // btnShowAccount
             // 
             this.btnShowAccount.Location = new System.Drawing.Point(279, 2);
-            this.btnShowAccount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnShowAccount.Margin = new System.Windows.Forms.Padding(2);
             this.btnShowAccount.Name = "btnShowAccount";
             this.btnShowAccount.Size = new System.Drawing.Size(88, 61);
             this.btnShowAccount.TabIndex = 3;
@@ -984,7 +987,7 @@ namespace Project
             // btnEditAccount
             // 
             this.btnEditAccount.Location = new System.Drawing.Point(187, 2);
-            this.btnEditAccount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEditAccount.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditAccount.Name = "btnEditAccount";
             this.btnEditAccount.Size = new System.Drawing.Size(88, 61);
             this.btnEditAccount.TabIndex = 2;
@@ -994,7 +997,7 @@ namespace Project
             // btnDeleteAccount
             // 
             this.btnDeleteAccount.Location = new System.Drawing.Point(94, 2);
-            this.btnDeleteAccount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDeleteAccount.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeleteAccount.Name = "btnDeleteAccount";
             this.btnDeleteAccount.Size = new System.Drawing.Size(88, 61);
             this.btnDeleteAccount.TabIndex = 1;
@@ -1004,7 +1007,7 @@ namespace Project
             // btnAddAccount
             // 
             this.btnAddAccount.Location = new System.Drawing.Point(2, 2);
-            this.btnAddAccount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddAccount.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddAccount.Name = "btnAddAccount";
             this.btnAddAccount.Size = new System.Drawing.Size(88, 61);
             this.btnAddAccount.TabIndex = 0;
@@ -1015,7 +1018,7 @@ namespace Project
             // 
             this.panel29.Controls.Add(this.dtgvAccount);
             this.panel29.Location = new System.Drawing.Point(4, 76);
-            this.panel29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel29.Margin = new System.Windows.Forms.Padding(2);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(383, 426);
             this.panel29.TabIndex = 4;
@@ -1024,7 +1027,7 @@ namespace Project
             // 
             this.dtgvAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvAccount.Location = new System.Drawing.Point(2, 2);
-            this.dtgvAccount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtgvAccount.Margin = new System.Windows.Forms.Padding(2);
             this.dtgvAccount.Name = "dtgvAccount";
             this.dtgvAccount.RowHeadersWidth = 51;
             this.dtgvAccount.RowTemplate.Height = 24;
@@ -1037,7 +1040,7 @@ namespace Project
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(829, 549);
             this.Controls.Add(this.tcAdmin);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";

@@ -52,5 +52,34 @@ namespace Project.DAO
             }
             return list;
         }
+
+        public bool InsertFood(string name, int id, float price)
+        {
+            string query = string.Format("Insert dbo.Food ( name , idCategory , price ) values ( N'{0}' , {1} , {2} )", name, id, price);
+
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
+
+        public bool UpdateFood(string name, int id, float price, int idFood)
+        {
+            string query = string.Format("Update dbo.Food set name = N'{0}', idCategory = {1}, price = {2} where id = {3}", name, id, price, idFood);
+
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
+
+        public bool DeleteFood(int idFood)
+        {
+            BillInfoDAO.Instance.DeleteBillInfoByFoodID(idFood);
+
+            string query = string.Format("Delete Food where id = {0}", idFood);
+
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
     }
 }
