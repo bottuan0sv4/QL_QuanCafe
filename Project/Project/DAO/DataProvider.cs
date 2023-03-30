@@ -20,7 +20,7 @@ namespace Project.DAO
 
         private DataProvider() { }
 
-        private string connectionSTR = @"Data Source=DESKTOP-A2UQG1F\SQLEXPRESS;Initial Catalog=QL_QuanCafe;Integrated Security=True";
+        private string connectionSTR = @"Data Source=DESKTOP-UO2968G\SQLEXPRESS;Initial Catalog=QL_QuanCafe;Integrated Security=True";
 
 
         public DataTable ExecuteQuery(string query, object[] parameter = null)

@@ -56,10 +56,11 @@ Create table Bill
 	DateCheckOut Date,
 	idTable Int not null,
 	status int not null default 0, -- 1 : da thanh toan && 0: chua thanh toan
+	discount INT NOT NULL DEFAULT 0
 
 	Foreign key (idTable) references dbo.TableFood(id)
 )
-Go
+GO
 
 Create table BillInfo
 (
@@ -111,8 +112,6 @@ BEGIN
 END
 GO
 
-EXEC dbo.USP_GetAccountByUserName @userName = N'0sv4' -- nvarchar(100)
-GO
 
 CREATE PROC  USP_Login
 @userName NVARCHAR(100), @passWord NVARCHAR(100)
@@ -136,8 +135,6 @@ CREATE PROC USP_GetTableList
 AS SELECT * FROM dbo.TableFood
 GO
 
-EXEC dbo.USP_GetTableList
-GO
 
 -- them category
 INSERT dbo.FoodCategory
@@ -255,126 +252,11 @@ VALUES
     20000  -- price - float
     )
 
--- Thêm bill
-INSERT dbo.Bill
-(
-    DateCheckIn,
-    DateCheckOut,
-    idTable,
-    status
-)
-VALUES
-(   DEFAULT, -- DateCheckIn - date
-    NULL,    -- DateCheckOut - date
-    1,       -- idTable - int
-    0  -- status - int
-    )
-
-INSERT dbo.Bill
-(
-    DateCheckIn,
-    DateCheckOut,
-    idTable,
-    status
-)
-VALUES
-(   DEFAULT, -- DateCheckIn - date
-    NULL,    -- DateCheckOut - date
-    2,       -- idTable - int
-    0  -- status - int
-    )
-
-INSERT dbo.Bill
-(
-    DateCheckIn,
-    DateCheckOut,
-    idTable,
-    status
-)
-VALUES
-(   DEFAULT, -- DateCheckIn - date
-    DEFAULT,    -- DateCheckOut - date
-    2,       -- idTable - int
-    0  -- status - int
-    )
-
-INSERT dbo.Bill
-(
-    DateCheckIn,
-    DateCheckOut,
-    idTable,
-    status
-)
-VALUES
-(   GETDATE(), -- DateCheckIn - date
-    GETDATE(),    -- DateCheckOut - date
-    3,       -- idTable - int
-    1  -- status - int
-    )
 
 
-
-ALTER TABLE dbo.Bill
-ADD discount INT
-
-UPDATE dbo.Bill SET discount = 0
-GO
 
 ALTER TABLE dbo.Bill ADD totalPrice FLOAT
 GO
-
--- thêm bill info
-
-INSERT dbo.BillInfo
-(
-    idBill,
-    idFood,
-    count
-)
-VALUES
-(   1,      -- idBill - int
-    1,      -- idFood - int
-    2 -- count - int
-    )
-
-INSERT dbo.BillInfo
-(
-    idBill,
-    idFood,
-    count
-)
-VALUES
-(   1,      -- idBill - int
-    3,      -- idFood - int
-    4 -- count - int
-    )
-
-INSERT dbo.BillInfo
-(
-    idBill,
-    idFood,
-    count
-)
-VALUES
-(   2,      -- idBill - int
-    1,      -- idFood - int
-    2 -- count - int
-    )
-
-INSERT dbo.BillInfo
-(
-    idBill,
-    idFood,
-    count
-)
-VALUES
-(   3,      -- idBill - int
-    5,      -- idFood - int
-    2 -- count - int
-    )
-
-GO
-    
 
 CREATE PROC USP_InsertBill
 @idTable INT
