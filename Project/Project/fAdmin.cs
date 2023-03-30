@@ -16,6 +16,9 @@ namespace Project
     public partial class fAdmin : Form
     {
         BindingSource foodList = new BindingSource();
+
+        BindingSource accountList = new BindingSource();
+
         public fAdmin()
         {
             InitializeComponent();
@@ -25,14 +28,36 @@ namespace Project
 
 
         #region methods
+        List<Food> SearchFoodByName(string name)
+        {
+            List<Food> listFood = FoodDAO.Instance.SearchFoodByName(name);
+
+            return listFood;
+        }
+
         void LoadfAdmin()
         {
             dtgvFood.DataSource = foodList;
+            dtgvAccount.DataSource = accountList;
             LoadListBillByDate(dtpkFromDate.Value, dtpkToDate.Value);
             LoadDateTimePickerBill();
             LoadListFood();
+            LoadAccount();
             AddFoodBinding();
             LoadCategoryIntoCombobox(cbFoodCategory);
+            AddAccountBinding();
+        }
+
+        void AddAccountBinding()
+        {
+            txbUserName.DataBindings.Add(new Binding("Text", dtgvAccount.DataSource, "UserName", true, DataSourceUpdateMode.Never));
+            txbDisplayName.DataBindings.Add(new Binding("Text", dtgvAccount.DataSource, "DisplayName", true, DataSourceUpdateMode.Never));
+            txbAccountType.DataBindings.Add(new Binding("Text", dtgvAccount.DataSource, "Type", true, DataSourceUpdateMode.Never));
+        }
+
+        void LoadAccount()
+        {
+            accountList.DataSource = AccountDAO.Instance.GetListAccount();
         }
 
         void LoadDateTimePickerBill()
@@ -69,6 +94,11 @@ namespace Project
 
 
         #region events
+
+        private void btnShowAccount_Click(object sender, EventArgs e)
+        {
+            LoadAccount();
+        }
 
         private void btnAddFood_Click(object sender, EventArgs e)
         {
@@ -145,27 +175,34 @@ namespace Project
 
         private void txbFoodID_TextChanged(object sender, EventArgs e)
         {
-            int id = (int)dtgvFood.SelectedCells[0].OwningRow.Cells["CategoryID"].Value;
-
-            Category category = CategoryDAO.Instance.GetCategoryByID(id);
-
-            cbFoodCategory.SelectedItem = category;
-
-            int index = -1;
-
-            int i = 0;
-
-            foreach (Category item in cbFoodCategory.Items)
+            try
             {
-                if (item.ID == category.ID)
+                if (dtgvFood.SelectedCells.Count > 0)
                 {
-                    index = i;
-                    break;
-                }
-                i++;
-            }
+                    int id = (int)dtgvFood.SelectedCells[0].OwningRow.Cells["CategoryID"].Value;
 
-            cbFoodCategory.SelectedIndex = index;
+                    Category category = CategoryDAO.Instance.GetCategoryByID(id);
+
+                    cbFoodCategory.SelectedItem = category;
+
+                    int index = -1;
+
+                    int i = 0;
+
+                    foreach (Category item in cbFoodCategory.Items)
+                    {
+                        if (item.ID == category.ID)
+                        {
+                            index = i;
+                            break;
+                        }
+                        i++;
+                    }
+
+                    cbFoodCategory.SelectedIndex = index;
+                }
+            }
+            catch { }
 
         }
 
@@ -192,6 +229,14 @@ namespace Project
             remove { updateFood -= value; }
         }
 
+
+        private void btnSearchFood_Click(object sender, EventArgs e)
+        {
+            foodList.DataSource =  SearchFoodByName(txbSearchFoodName.Text);
+        }
+
         #endregion
+
+        
     }
 }

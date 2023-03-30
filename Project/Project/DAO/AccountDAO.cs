@@ -45,5 +45,10 @@ namespace Project.DAO
             }
             return null;
         }
+
+        public DataTable GetListAccount()
+        {
+            return DataProvider.Instance.ExecuteQuery("Select UserName, displayName, Type from dbo.Account");
+        }
     }
 }
