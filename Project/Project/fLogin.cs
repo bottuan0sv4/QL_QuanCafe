@@ -41,13 +41,12 @@ namespace Project
             }
             else
             {
-                MessageBox.Show("Sai ten tai khoan hoac mat khau!");
+                MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!!!");
             }
         }
 
         bool Login(string userName, string passWord)
         {
-
             return AccountDAO.Instance.Login(userName,passWord);
         }
 

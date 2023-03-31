@@ -26,10 +26,10 @@ Create table Account
 (
 UserName nvarchar(100) primary key,
 	DisplayName nvarchar(100) not null default N'...',
-	PassWord nvarchar(1000) not null,
+	PassWord nvarchar(1000) not NULL DEFAULT 0,
 	Type int not null default 0 -- 1:admin && 0:staff
 )
-Go
+GO
 
 Create table FoodCategory
 (
@@ -56,7 +56,8 @@ Create table Bill
 	DateCheckOut Date,
 	idTable Int not null,
 	status int not null default 0, -- 1 : da thanh toan && 0: chua thanh toan
-	discount INT NOT NULL DEFAULT 0
+	discount INT NOT NULL DEFAULT 0,
+	totalPrice FLOAT NOT NULL
 
 	Foreign key (idTable) references dbo.TableFood(id)
 )
@@ -117,7 +118,7 @@ CREATE PROC  USP_Login
 @userName NVARCHAR(100), @passWord NVARCHAR(100)
 AS
 BEGIN
-	SELECT * FROM dbo.Account WHERE UserName = @userName AND PassWord = PassWord
+	SELECT * FROM dbo.Account WHERE UserName = @userName AND PassWord = @passWord
 END
 GO
 
@@ -252,11 +253,6 @@ VALUES
     20000  -- price - float
     )
 
-
-
-
-ALTER TABLE dbo.Bill ADD totalPrice FLOAT
-GO
 
 CREATE PROC USP_InsertBill
 @idTable INT
